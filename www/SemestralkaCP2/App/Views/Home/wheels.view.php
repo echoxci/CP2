@@ -9,15 +9,15 @@
 <section class="py-5">
     <div class="container px-4 px-lg-5 mt-5">
         <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-            <?php foreach($data as $skate): ?>
+            <?php foreach($data as $wheels): ?>
             <div class="col mb-5">
                 <div class="card h-100">
-                    <img class="card-img-top" src="public/assets/img/<?= $skate->img_path ?>" alt="<?= $skate->name ?>"/>
+                    <img class="card-img-top" src="public/assets/img/<?= $wheels->img_path ?>" alt="<?= $wheels->name ?>"/>
                     <div class="card-body p-4">
                         <div class="text-center">
-                            <h5 class="fw-bolder"><?= $skate->name ?></h5>
-                            <?= $skate->description ?>
-                            <p><?= $skate->price ?> &euro;</p>
+                            <h5 class="fw-bolder"><?= $wheels->name ?></h5>
+                            <?= $wheels->description ?>
+                            <p><?= $wheels->price ?> &euro;</p>
                         </div>
                     </div>
                     <div class="card-footer row p-4 pt-0 border-top-0 bg-transparent">
