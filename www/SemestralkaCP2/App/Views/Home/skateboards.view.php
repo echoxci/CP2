@@ -29,33 +29,41 @@
             <?php endforeach; ?>
         </div>
         <div align="right">
-            <button class="btn btn-new-product">Pridať produkt</button>
+            <button class="btn btn-new-product" data-bs-toggle="modal" data-bs-target="#to-new-product">Pridať produkt</button>
             <button class="btn btn-new-product">Vymazať celu kategoriu</button>
         </div>
     </div>
 </section>
-<!--MODAL-->
-<div id="to-new-category" class="modal fade" role="dialog" style="display: none;">
+
+
+<!--NEW PRODUCT MODAL-->
+<div id="to-new-product" class="modal fade" role="dialog" style="display: none;">
     <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h4 id="modal-name" class="modal-title" align="center">Zadajte názov novej kategorie</h4>
+                <h4 id="modal-name" class="modal-title" align="center">Pridaj novy produkt</h4>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <label for="input-new-category">Nazov kategorie</label>
-                    <input type="text" id="input-new-category">
+                    <label for="input-new-product-name">Nazov produktu</label>
+                    <input type="text" id="input-new-product-name">
+                    <label for="input-new-product-description">Popis produktu</label>
+                    <input type="text" id="input-new-product-description">
+                    <label for="input-new-product-price">Cena produktu</label>
+                    <input type="text" id="input-new-product-price">
+                    <label for="input-new-product-img">Nazov obrazku v zlozke</label>
+                    <input type="text" id="input-new-product-img">
                 </div>
             </div>
             <div class="modal-footer form-group">
-                <div class="text-center"></div>
-                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Zatvoriť</button>
-                <button id="to-cart" type="button" class="btn btn-outline-dark">Vytvoriť</button>
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Zatvoriť</button>
+                    <button id="add-product" type="button" class="btn btn-outline-dark">Pridať produkt</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>
